@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Tasks Application</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<div class="container" style="max-width:500px;">
+		<h3>My Tasks Application</h3>
+
+		<form onsubmit="addItem(); return false;" method="post">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Add a new task" id="todoInput" on/>
+			</div>
+			<button onClick="addItem()" class="btn btn-success btn-lg btn-block">Add Task</button>
+		</form>
+
+		<hr>
+
+		<ul id="todos" class="list-group">
+			<li class="list-group-item"><em>Hooraay! I have finished all tasks</em></li>
+		</ul>
+</body>
+
+</html>
